@@ -1,0 +1,67 @@
+8/4/22, 3:56 PM Copy of Untitled0.ipynb - Colaboratory
+https://colab.research.google.com/drive/1OUtc-rtBx4Q6z8ayKdKcbEBHdmSiIcYJ#scrollTo=OgFo0AjpGP2a&printMode=true 1/3
+list = ([1,2,3],[4,5,6])
+print(list)
+([1, 2, 3], [4, 5, 6])
+import numpy as np
+np.array(list)
+array([[1, 2, 3],
+ [4, 5, 6]])
+np.arange(1,20)
+array([ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+ 18, 19])
+np.arange(1,20,2)
+array([ 1, 3, 5, 7, 9, 11, 13, 15, 17, 19])
+np.zeros(4)
+array([0., 0., 0., 0.])
+np.abs(-5)
+5
+np.ones((5,5),dtype=int)
+array([[1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1]])
+np.eye(5)
+array([[1., 0., 0., 0., 0.],
+ [0., 1., 0., 0., 0.],
+ [0., 0., 1., 0., 0.],
+ [0., 0., 0., 1., 0.],
+ [0., 0., 0., 0., 1.]])
+np.linspace(0,5,20)
+8/4/22, 3:56 PM Copy of Untitled0.ipynb - Colaboratory
+https://colab.research.google.com/drive/1OUtc-rtBx4Q6z8ayKdKcbEBHdmSiIcYJ#scrollTo=OgFo0AjpGP2a&printMode=true 2/3
+array([0. , 0.26315789, 0.52631579, 0.78947368, 1.05263158,
+ 1.31578947, 1.57894737, 1.84210526, 2.10526316, 2.36842105,
+ 2.63157895, 2.89473684, 3.15789474, 3.42105263, 3.68421053,
+ 3.94736842, 4.21052632, 4.47368421, 4.73684211, 5. ])
+np.random.rand(5)
+array([0.38269391, 0.99870259, 0.94421987, 0.24933386, 0.49743504])
+np.random.randn(5)
+array([-0.28120543, 1.03755881, -1.21247251, -2.11808043, -0.06172139])
+np.random.randint(1,100)
+92
+new_arr=np.random.randint(1,100,10)
+new_arr.shape
+(10,)
+li=new_arr.reshape(5,2)
+li.shape
+(5, 2)
+array[0:6]
+array([[1, 2, 3],
+ [4, 5, 6]])
+sam=np.array([[1,2,3],[8,4,7],[7,23,85]])
+print(sam)
+[[ 1 2 3]
+ [ 8 4 7]
+ [ 7 23 85]]
+sam[2][2]
+85
+sam[:2,1:]
+array([[2, 3],
+ [4, 7]])
+8/4/22, 3:56 PM Copy of Untitled0.ipynb - Colaboratory
+https://colab.research.google.com/drive/1OUtc-rtBx4Q6z8ayKdKcbEBHdmSiIcYJ#scrollTo=OgFo0AjpGP2a&printMode=true 3/3
+sam[1:,:2]
+array([[ 8, 4],
+ [ 7, 23]])

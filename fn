@@ -1,0 +1,18 @@
+x=[0,0,1,1]
+y=[1,0,1,0]
+w1=floatinput("enter the weight 1"))
+w2=float(input("enter the weight 2"))
+eta=float(input("enter the eta))
+th=float(input("enter the theeta"))
+for i in range (0,len(x1)):
+    t=int(x1[i] and x2[i])
+    if(w1*x1[i] and  w2*x2[i]):
+        a=0
+    else:
+        a=1
+    if(t != a ):
+        w1=w1*n*(t-a)*x1[i]
+        w2=w2*n*(t-a)*x2[i]
+        i=0
+print("w1 = ",w1)
+print("w2 = ",w2)
